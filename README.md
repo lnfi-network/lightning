@@ -67,6 +67,15 @@ const {lnd} = authenticatedLndGrpc({
 });
 ```
 
+```taprootasset
+const {authenticatedLndGrpc} = require('lightning');
+const { lnd: tpr } = authenticatedLndGrpc({
+    cert: 'base64 encoded tls.cert file',
+    macaroon: 'base64 encoded taproot.macaroon file',
+    socket: '127.0.0.1:10009',
+});
+```
+
 To access unauthenticated methods like the wallet unlocker, use 
 `unauthenticatedLndGrpc` instead.
 
