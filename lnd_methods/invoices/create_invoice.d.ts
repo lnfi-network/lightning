@@ -2,7 +2,7 @@ import {
   AuthenticatedLightningArgs,
   AuthenticatedLightningMethod,
   Routes,
-} from '../../typescript';
+} from "../../typescript";
 
 export type CreateInvoiceArgs = AuthenticatedLightningArgs<{
   /** CLTV Delta */
@@ -28,6 +28,9 @@ export type CreateInvoiceArgs = AuthenticatedLightningArgs<{
   routes?: Routes;
   /** Tokens */
   tokens?: number;
+  asset_id?: string;
+  peer_pubkey?: string;
+  tpr?: any;
 }>;
 
 export type CreateInvoiceResult = {

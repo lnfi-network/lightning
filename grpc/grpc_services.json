@@ -16,7 +16,8 @@
     "WalletUnlocker": "lnrpc",
     "WalletKit": "walletrpc",
     "Watchtower": "watchtowerrpc",
-    "WatchtowerClient": "wtclientrpc"
+    "WatchtowerClient": "wtclientrpc",
+    "TaprootAssetChannels":"tapchannelrpc"
   },
   "protoFiles": {
     "Autopilot": "autopilot.proto",
@@ -32,7 +33,8 @@
     "WalletUnlocker": "walletunlocker.proto",
     "WalletKit": "walletkit.proto",
     "Watchtower": "watchtower.proto",
-    "WatchtowerClient": "wtclient.proto"
+    "WatchtowerClient": "wtclient.proto",
+    "TaprootAssetChannels":"tapchannelrpc.proto"
   },
   "protosDir": "../grpc/protos",
   "serviceTypes": {
@@ -47,7 +49,8 @@
     "tower_client": "WatchtowerClient",
     "tower_server": "Watchtower",
     "version": "Versioner",
-    "wallet": "WalletKit"
+    "wallet": "WalletKit",
+    "taproot_asset_channels": "TaprootAssetChannels"
   },
   "unauthenticatedPackageTypes": {
     "State": "lnrpc",
